@@ -1,6 +1,6 @@
-add_subdirectory(kml)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
-include_directories(kmlbase PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/)
+add_subdirectory(kml)
 
 
 if(WITH_SWIG)
